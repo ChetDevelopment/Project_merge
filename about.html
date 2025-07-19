@@ -5,6 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About_page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body {
             height: 100vh;
@@ -17,13 +20,159 @@
         .screen {
             height: 926px;
             width: 480px;
-            background: pink;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header-content {
+            background-color: rgb(37, 15, 138);
+            height: 110px;
+            display: flex;
+            align-items: flex-end;
+            gap: 20px;
+            color: white;
+            font-size: 25px;
+        }
+
+        .header-content h5 b {
+            color: red;
+        }
+
+        .header-content h5 {
+            margin-bottom: 10px;
+        }
+
+        .header-content i {
+
+            margin-left: 20px;
+            margin-bottom: 5px;
+        }
+
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .main-top {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            background-color: rgb(68, 41, 185);
+        }
+
+        .main-top img {
+            height: 12rem;
+            width: 12rem;
+        }
+
+        .main-top-left {
+            flex: 1;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            color: white;
+        }
+
+        .left-top {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+
+        }
+
+        .left-top h5 {
+            margin-top: 1px;
+            margin-bottom: 5px;
+            font-size: 25px;
+        }
+
+        .left-top p {
+            margin-left:-35px ;
+            margin-bottom: 1px;
+        }
+        .left-bottom h5 {
+            margin-top: -15px;
+            font-size: 25px;
+        }
+
+        .left-bottom p {
+            margin-left:-35px ;
+            margin-top: 5px;
+        }
+
+        .left-bottom {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            border-top: 1px solid wheat;
+        }
+
+        .main-bottom {
+            flex: 2.3;
+            background-color: whitesmoke;
+            display: flex;
+            flex-direction: column;
+        }
+        .card-1{
+            height: 100px;
+            width: 26.7rem;
+            background: white;
+            margin-top: 20px;
+            margin-left: 20px;
+            border-left: 15px solid greenyellow;
+            border-radius: 10px;
+        }
+        .purple{
+            border-left: 15px solid purple;
         }
     </style>
 </head>
 
 <body>
-
+    <div class="screen">
+        <header class="header-content">
+            <i class="fa fa-angle-left" aria-hidden="true"></i>
+            <h5>ABA<b>'</b> Accounts</h5>
+        </header>
+        <main class="main-content">
+            <div class="main-top">
+                <img src="/image/download.png" alt="">
+                <div class="main-top-left">
+                    <div class="left-top">
+                        <p>Total in USD</p>
+                        <h5>$ 95,394.00</h5>
+                    </div>
+                    <div class="left-bottom">
+                        <p>Total in KHR</p>
+                        <h5>៛ 95,394,150</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="main-bottom">
+                <div class="card-1">
+                    <div class="left-card">
+                        <p>Savings Account</p>
+                        <p>CO34CO34O</p>
+                        
+                    </div>
+                    <div class="right-card">
+                        <div class="top-right-card">
+                            <i class="fa fa-bell-o" aria-hidden="true"></i>
+                            
+                        </div>
+                        <div class="bottom-right-card"></div>
+                    </div>
+                </div>
+                <div class="card-1 purple"></div>
+                <div class="card-1"></div>
+            </div>
+        </main>
+    </div>
 </body>
 
 </html>
