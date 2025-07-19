@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home_page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
         body {
             height: 100vh;
@@ -12,39 +13,138 @@
             display: flex;
             align-items: center;
             justify-content: center;
+            color: white;
         }
         .screen{
             height: 926px;
             width: 480px;
-            background: pink;
+            background: 
+            rgba(0, 0, 255, 0.582);
+            display: flex;
+            flex-direction: column;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
         }
         .navbar {
             flex: 1;
-            background: orange;
         }
 
         .main-header {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+        }
+        .header-top{
             flex: 1;
-            background: blue;
+            font-size: 30px;
+            display: flex;
+            align-items: flex-end;
+            justify-content: flex-end;
+            
+        }
+        .header-top i{
+            margin-right: 20px;
+            margin-bottom: 10px;
+        }
+        .header-bottom{
+            flex: 1;
+            background: rgba(128, 128, 128, 0.11);
+            display: flex;
+            align-items: center;
+        }
+        .text{
+            display: flex;
+            flex-direction: column;
+        }
+        .text p{
+            margin-bottom: -15px;
+        }
+        .text h3{
+            margin-top: 25px;
+        }
+        .image{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            margin-left: 29px;
+            margin-right: 20px;
+            border: 2px solid white;
+        }
+        .image img{
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+        }
+        .main-content{
+            flex: 5;
+            background: #000;
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
 
         }
-
-        .top-ss {
-            flex: 1;
-            background: yellow;
+        .main-top{
+            flex: 1.5;
+            background: green;
         }
+        .main-middle{
+            flex: 2;
+            background: white;
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        .card-1{
+            background-color: skyblue;
+            height: 6rem;
+            width: 8rem;
+        }
+        .space{
+            margin-left: 29px;
+        }
+        .main-bottom{
+            flex: 1;
+            background: rgba(0, 128, 0, 0.164);
+        }
+        .footer-contentner{
+            flex: 2;
+            background: purple;;
+        }
+
     </style>
 </head>
 
 <body>
     <div class="screen">
-
-
-        <nav class="navbar"></nav>
-        <header class="main-header"></header>
-        <section class="top-ss"></section>
-        <section class="center-ss"></section>
-        <section class="bottom-ss"></section>
+        <header class="main-header">
+            <div class="header-top">
+                <i class="far fa-comment-dots"></i>
+                <i class="fa-regular fa-bell"></i>
+                <i class="fa-solid fa-qrcode"></i>
+            </div>
+            <div class="header-bottom">
+                <div class="image">
+                    <img src="/image/image.png" alt="">
+                </div>
+                <div class="text">
+                    <p>Happy new year!</p>
+                    <h3>SIV</h3>
+                </div>
+            </div>
+        </header>
+        <main class="main-content">
+            <div class="main-top"></div>
+            <div class="main-middle">
+                <div class="card-1 space"></div>
+                <div class="card-1"></div>
+                <div class="card-1"></div>
+                <div class="card-1 space"></div>
+                <div class="card-1"></div>
+                <div class="card-1"></div>
+            </div>
+            <div class="main-bottom"></div>
+        </main>
+        <footer class="footer-contentner">
+        </footer>
     </div>
 </body>
 
