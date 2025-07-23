@@ -4,26 +4,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Service_page</title>
+    <title>Document</title>
+    <link rel="stylesheet" href="/style/style-1.css">
     <style>
-        body {
-            height: 100vh;
-            width: 100%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        * {
+            margin: 0;
+            padding: 0;
         }
 
-        .screen {
-            height: 926px;
-            width: 480px;
-            background: pink;
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #5bd7e8, #a455f2);
+            font-family: 'Poppins', sans-serif;
+            height: 100vh;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            padding: 10px 30px 30px 30px;
+            width: 700px;
+            height: 50%;
+            gap: 40px;
+        }
+
+        input {
+            font-size: 18px;
+        }
+
+        p {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 40px;
+            padding-top: 20px;
+            background: linear-gradient(to right, #8530d9, #5bd7e8, #8530d9, #5bd7e8, #6b33a3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .full-name {
+            display: flex;
+            border: none;
+            width: 100%;
+            gap: 20px;
+            font-size: 18px;
+        }
+
+        .full-name input {
+            border: 1px solid #ccc;
+            height: 40px;
+            width: 100%;
+        }
+
+        .name {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            gap: 10px;
+            border-bottom: 1px solid gray;
+            position: relative;
+        }
+
+        .name input {
+            border: none;
+            width: 100%;
+            position: relative;
+            outline: none;
+            background: transparent;
+            color: #333;
+            height: 40px;
+        }
+
+        input:focus {
+            border: none;
+            border-bottom: 1px solid blue;
+            outline: none;
+        }
+
+        .email-web {
+            display: flex;
+            border: none;
+            width: 100%;
+            gap: 20px;
+        }
+
+        .email-web input {
+            height: 40px;
+            width: 100%;
+        }
+
+        .website input {
+            height: 40px;
+            width: 100%;
+        }
+
+        button {
+            width: 150px;
+            height: 40px;
+            border: none;
+            background: linear-gradient(to right, #5bd7e8, #a455f2);
+        }
+
+        .name input:focus+label,
+        .name input:not(:placeholder-shown)+label {
+            top: -10px;
+            font-size: 13px;
+            color: #5bd7e8;
+            background: #fff;
+            padding: 0 5px;
+        }
+
+        .name label {
+            position: absolute;
+            top: 10px;
+            left: 0;
+            color: #aaa;
+            font-size: 16px;
+            pointer-events: none;
+            transition: 0.3s ease;
         }
     </style>
 </head>
 
 <body>
-    <div class="screen"></div>
+    <form action="#">
+        <p>Responsive Contact us Form</p>
+
+        <div class="full-name">
+            <div class="name">
+                <input type="name" required placeholder=" " />
+                <label for="name">First Name</label>
+            </div>
+            <div class="name">
+                <input type="name" required placeholder=" " />
+                <label for="name">Last Name</label>
+            </div>
+        </div>
+
+        <div class="email-web">
+            <div class="name">
+                <input type="email" required placeholder=" " />
+                <label for="text">Email Address</label>
+            </div>
+            <div class="name">
+                <input type="text" required placeholder=" " />
+                <label for="text">Website Name</label>
+            </div>
+        </div>
+
+        <div class="website">
+            <div class="name">
+                <input type="text" required placeholder=" " />
+                <label for="text">Write your message</label>
+            </div>
+        </div>
+
+        <button>Submit</button>
+    </form>
 </body>
 
 </html>
